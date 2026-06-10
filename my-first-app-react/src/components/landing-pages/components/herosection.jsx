@@ -1,56 +1,16 @@
-import React from "react";
-import { Button } from "../../ui/button";
-
-export default function HeroSection() {
+function HeroSection() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-primary text-white"
-      style={styles.section}
-    >
-      <div className="container">
-        <div className="row align-items-center">
-          
-          {/* LEFT */}
-          <div className="col-lg-6">
-            <h1 className="display-4 fw-bold mb-4">
-              Discover Your Next Great Read
-            </h1>
+    <section className="hero">
+      <h1>Welcome to NeoTech Future</h1>
 
-            <p className="lead mb-4">
-              Explore thousands of books across all genres. From bestsellers to
-              hidden gems, find your perfect book today.
-            </p>
+      <p>
+        Bringing futuristic technology solutions with Artificial
+        Intelligence and Smart Systems.
+      </p>
 
-            <div className="d-flex gap-3">
-              <Button className="btn btn-light btn-lg">
-                <i className="bi bi-search me-2"></i>
-                Browse Books
-              </Button>
-
-              <Button className="btn btn-outline-light btn-lg">
-                <i className="bi bi-play-circle me-2"></i>
-                Learn More
-              </Button>
-            </div>
-          </div>
-
-          {/* RIGHT */}
-          <div className="col-lg-6 text-center mt-4 mt-lg-0">
-            <i
-              className="bi bi-book"
-              style={{ fontSize: "15rem", opacity: 0.8 }}
-            ></i>
-          </div>
-
-        </div>
-      </div>
+      <button>Get Started</button>
     </section>
   );
 }
 
-const styles = {
-  section: {
-    background: "linear-gradient(135deg, #667eea, #764ba2)",
-  },
-};
+export default HeroSection;
